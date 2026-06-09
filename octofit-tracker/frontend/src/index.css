@@ -1,0 +1,72 @@
+:root {
+  --ink: #18304b;
+  --muted: #667083;
+  --cream: #fff8ef;
+  --surface: rgba(255, 252, 247, 0.78);
+  --line: rgba(24, 48, 75, 0.12);
+  --display: 'Avenir Next', 'Trebuchet MS', sans-serif;
+  --body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
+  font: 16px/1.55 var(--body);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(255, 177, 66, 0.3), transparent 24%),
+    radial-gradient(circle at top right, rgba(91, 132, 177, 0.24), transparent 22%),
+    linear-gradient(180deg, #fdf5e8 0%, #f4efe7 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#root {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  min-height: 100svh;
+  padding: 1.5rem 0 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  color: var(--ink);
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.7rem, 6vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin: 0.7rem 0 1rem;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 0.4rem;
+}
+
+p {
+  margin: 0;
+}
+
+strong,
+code {
+  font-family: var(--mono);
+}
+
+@media (max-width: 700px) {
+  #root {
+    width: min(100%, calc(100% - 1rem));
+    padding-top: 0.75rem;
+  }
+}
