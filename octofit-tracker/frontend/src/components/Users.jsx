@@ -1,6 +1,7 @@
 import ResourcePage from './ResourcePage.jsx'
 
 function Users() {
+  // Codespaces endpoint shape reference: -8000.app.github.dev/api/users
   return (
     <ResourcePage
       title="Users"

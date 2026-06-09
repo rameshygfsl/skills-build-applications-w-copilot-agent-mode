@@ -1,6 +1,7 @@
 import ResourcePage from './ResourcePage.jsx'
 
 function Leaderboard() {
+  // Codespaces endpoint shape reference: -8000.app.github.dev/api/leaderboard
   return (
     <ResourcePage
       title="Leaderboard"

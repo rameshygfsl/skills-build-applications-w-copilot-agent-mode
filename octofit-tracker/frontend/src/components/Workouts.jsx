@@ -1,6 +1,7 @@
 import ResourcePage from './ResourcePage.jsx'
 
 function Workouts() {
+  // Codespaces endpoint shape reference: -8000.app.github.dev/api/workouts
   return (
     <ResourcePage
       title="Workouts"

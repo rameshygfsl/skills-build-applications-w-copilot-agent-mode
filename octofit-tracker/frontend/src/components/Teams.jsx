@@ -1,6 +1,7 @@
 import ResourcePage from './ResourcePage.jsx'
 
 function Teams() {
+  // Codespaces endpoint shape reference: -8000.app.github.dev/api/teams
   return (
     <ResourcePage
       title="Teams"
